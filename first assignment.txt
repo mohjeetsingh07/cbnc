@@ -1,0 +1,28 @@
+#1
+s = "Hi there Class"
+print(s.split())
+
+#2
+planet = "Earth"
+diameter = 12742
+print("The diameter of the {} is {} " .format(planet, diameter))
+
+#3
+lst = [1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
+grab = lst[3][1][2][0]
+print(grab)
+
+d = {'k1': [1, 2, 3, {'tricky': ['oh', 'man', 'inception', {'target': [1, 2,
+3, 'hello']}]}]}
+grab1 = d['k1'][3]['tricky'][3]['target'][3]
+print(grab1)
+
+def GetDomain(email):
+grab2 = email.split('@')
+return grab2[1]
+print(GetDomain("pratyaksh@gmail.com"))
+
+def Is_True(String):
+return 'dog' in String
+String = "I have a dog named Rover."
+print(Is_True(String))
